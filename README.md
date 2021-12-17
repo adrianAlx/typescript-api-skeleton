@@ -6,7 +6,7 @@ This is a repository intended to serve as a starting point if you want to bootst
 
 ```
 # install dependencies
-npm install
+npm run basic-setup
 
 # run in dev mode on port 3000
 npm run dev
@@ -24,4 +24,9 @@ npm run start
 
 ```
 npm run test
+```
+
+### Use watch
+```
+npm run test-watch
 ```
