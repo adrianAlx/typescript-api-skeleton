@@ -1,0 +1,18 @@
+{
+  "name": "typescript-api-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "dev": "tsc-watch --onSuccess \"nodemon ./dist/server.js\"",
+    "build": "tsc",
+    "test": "jest --verbose --silent ./tests/*.spec.ts",
+    "test-watch": "npm run test -- --watch",
+    
+    "basic-setup": "npm i -D @types/express @types/cors @types/bcrypt @types/jsonwebtoken @types/mongoose @types/morgan @types/passport @types/passport-jwt @types/memory-cache @types/compression @types/jest @types/supertest typescript tsc-watch nodemon jest supertest ts-jest && npm i express cors dotenv express-validator bcryptjs mongoose jsonwebtoken helmet memory-cache morgan compression"
+  },
+  "keywords": [],
+  "author": "Adrian Changalombo",
+  "license": "ISC"
+}
