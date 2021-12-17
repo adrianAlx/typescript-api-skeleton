@@ -5,6 +5,7 @@ import express from 'express';
 
 import './db/db';
 import { setupMiddlewares } from './middlewares/setup.middleware';
+import { notFoundMiddleware } from './middlewares';
 
 // Initializations:
 const app: Application = express();
@@ -16,5 +17,7 @@ setupMiddlewares(app);
 app.get('/', (req: Request, res: Response) => {
   res.status(200).json({ msg: 'GET' });
 });
+
+app.use(notFoundMiddleware);
 
 export default app;
