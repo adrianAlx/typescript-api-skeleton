@@ -10,7 +10,7 @@
     "test": "jest --verbose --silent ./tests/*.spec.ts",
     "test-watch": "npm run test -- --watch",
     
-    "basic-setup": "npm i -D @types/bcrypt @types/compression @types/cors @types/express @types/jest @types/jsonwebtoken @types/memory-cache @types/mongoose @types/morgan @types/passport @types/passport-jwt @types/supertest @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint jest nodemon supertest ts-jest tsc-watch typescript && npm i express cors dotenv express-validator bcryptjs mongoose jsonwebtoken helmet memory-cache morgan compression"
+    "basic-setup": "npm i -D @types/bcryptjs @types/compression @types/cors @types/express @types/jest @types/jsonwebtoken @types/memory-cache @types/mongoose @types/morgan @types/passport @types/passport-jwt @types/supertest @typescript-eslint/eslint-plugin @typescript-eslint/parser passport passport-jwt eslint jest nodemon supertest ts-jest tsc-watch typescript ncp && npm i express cors dotenv express-validator bcryptjs mongoose jsonwebtoken helmet memory-cache morgan compression"
   },
   "keywords": [],
   "author": "Adrian Changalombo",
